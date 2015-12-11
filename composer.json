@@ -1,0 +1,21 @@
+{
+  "name": "mii-app",
+  "description": "mii simple application skeleton",
+  "type": "project",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.6.0",
+    "levmorozov/mii": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\" : "app/"
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "mii\\": "vendor/mii"
+    }
+  }
+}
