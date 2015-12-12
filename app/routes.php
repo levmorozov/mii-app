@@ -2,6 +2,8 @@
 
 use mii\core\Route;
 
+Route::current_namespace('app\controllers');
+
 Route::set('auth', 'auth/<action>')
     ->defaults([
         'controller' => 'Auth',

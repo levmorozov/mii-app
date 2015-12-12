@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+defined('MII_DEBUG') or define('MII_DEBUG', false);
+
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
+defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
+defined('STDERR') or define('STDOUT', fopen('php://stderr', 'w'));
+
+require(__DIR__ . '/vendor/autoload.php');
+require(__DIR__ . '/boot.php');
+
+$config = require(path('app').'/config/main.php');
+$config = array_replace_recursive($config, require(path('app').'/config/console.php'));
+
+(new mii\console\App($config))->run();
+
+?>

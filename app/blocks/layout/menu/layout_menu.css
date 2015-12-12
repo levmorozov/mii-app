@@ -1,0 +1,47 @@
+.layout_menu {
+    padding: 2px 20px 0px 0px;
+    height:25px;
+    display:block;
+    margin: 0 auto;
+}
+
+.layout_menu__item {
+    display: inline-block;
+    zoom: 1;
+    *display:inline;
+    height:30px;
+    padding: 0;
+}
+
+.layout_menu__item:last-child .layout_menu__item__link {
+    border:  none;
+}
+
+.layout_menu__item__link,
+.layout_menu__item__link:visited {
+    font: 15px "Trebuchet MS",sans-serif;
+    color: #222;
+    text-decoration: none;
+    border-bottom:none;
+    display:block;
+    padding: 5px 25px 7px 25px;
+}
+
+.layout_menu__item__active .layout_menu__item_span{
+    color: #db4105;
+
+}
+
+.layout_menu__item:hover {
+    background-color: #eee;
+
+}
+
+.layout_menu__item:hover .layout_menu__item_span {
+    border:none;
+    color: #000 !important;
+}
+
+
+
+

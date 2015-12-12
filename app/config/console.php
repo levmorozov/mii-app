@@ -12,5 +12,5 @@ return [
             'file' => '/logs/console.log',
             'category' => ['console']
         ]
-    ]
+    ],
 ];

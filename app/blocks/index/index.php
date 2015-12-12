@@ -4,6 +4,7 @@
     <title><?php echo $title;?></title>
     <meta http-equiv="Content-Language" content="ru">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <?php if($description):?>
         <meta name="description" content="<?php echo $description?>" />
     <?php endif;?>

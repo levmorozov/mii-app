@@ -6,7 +6,8 @@
   "license": "MIT",
   "require": {
     "php": ">=5.6.0",
-    "levmorozov/mii": "dev-master"
+    "levmorozov/mii": "dev-master",
+    "bower-asset/jquery": "1.*.*@stable"
   },
   "autoload": {
     "psr-4": {
@@ -16,6 +17,10 @@
   "extra": {
     "installer-paths": {
       "mii\\": "vendor/mii"
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
     }
   }
 }
