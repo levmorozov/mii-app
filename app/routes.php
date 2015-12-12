@@ -11,6 +11,16 @@ Route::set('auth', 'auth/<action>')
     ]);
 
 
+
+Route::set('page', '<path>', [
+    'path' => '(about)'
+])
+    ->defaults([
+        'controller' => 'Page',
+        'action'     => 'show',
+    ]);
+
+
 Route::set('mainpage', '')
     ->defaults([
         'controller' => 'Main',

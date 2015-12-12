@@ -12,11 +12,19 @@ body {
 .layout__header {
     border-bottom: 1px solid rgba(0,0,0, 0.1);
     padding: 20px 30px;
+    display: flex;
 }
 
 .layout__header_logo {
     font-size:54px;
     font-family: Georgia;
+
+}
+
+
+.layout__header_menu {
+    margin-left: auto;
+    margin-top: 15px;
 }
 
 

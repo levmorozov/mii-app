@@ -3,6 +3,9 @@
     <div class="layout__header">
         <div class="layout__header_logo">Site logo</div>
 
+        <div class="layout__header_menu">
+            <?= block('layout_menu');?>
+        </div>
     </div>
     <div class="layout__content">
 
