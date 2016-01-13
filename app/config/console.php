@@ -2,15 +2,27 @@
 
 return [
 
-    'console' => [
-        'namespace' => '\app\console',
-    ],
+    'debug' => false,
+    'profiling' => false,
 
-    'log' => [
-        '\mii\console\Log' => [
-            'levels' => mii\log\Logger::ALL,
-            'file' => '/logs/console.log',
-            'category' => ['console']
+    'console' => [
+        'namespaces' => [
+            '\app\console'
         ]
     ],
+
+    'components' => [
+        'log' => [
+            'class' => 'mii\log\Logger',
+            'targets' => [
+                [
+                    'class' => '\mii\console\Log',
+                    'levels' => mii\log\Logger::ALL,
+                    'file' => '/logs/console.log',
+                    'category' => ['console']
+                ]
+            ]
+        ],
+    ]
+
 ];

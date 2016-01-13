@@ -6,8 +6,7 @@
   "license": "MIT",
   "require": {
     "php": ">=5.6.0",
-    "levmorozov/mii": "dev-master",
-    "bower-asset/jquery": "1.*.*@stable"
+    "levmorozov/mii": "dev-master"
   },
   "autoload": {
     "psr-4": {

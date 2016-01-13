@@ -12,7 +12,7 @@
         <meta property="og:<?php echo $name?>" content="<?php echo str_replace('"',"'",$content) ?>" />
     <?php endforeach;?>
 
-    <?= Mii::$app->blocks() ?>
+    <?= Mii::$app->blocks ?>
 </head>
 <body>
 <?php echo $layout?>

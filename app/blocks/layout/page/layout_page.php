@@ -1,4 +1,4 @@
 <div class="layout_page">
-    <h1><?= htmlentities($path)?></h1>
+    <h1><?= e($path)?></h1>
 
 </div>
