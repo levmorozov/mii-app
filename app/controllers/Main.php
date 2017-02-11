@@ -3,6 +3,8 @@
 namespace app\controllers;
 
 
+use mii\util\URL;
+
 class Main extends Base {
 
 

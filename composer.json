@@ -5,8 +5,8 @@
   "minimum-stability": "dev",
   "license": "MIT",
   "require": {
-    "php": ">=5.6.0",
-    "levmorozov/mii": "dev-master"
+    "php": ">=7.1",
+    "levmorozov/mii": "~1.1"
   },
   "autoload": {
     "psr-4": {

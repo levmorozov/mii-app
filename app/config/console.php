@@ -2,9 +2,6 @@
 
 return [
 
-    'debug' => false,
-    'profiling' => false,
-
     'console' => [
         'namespaces' => [
             '\app\console'
@@ -18,7 +15,7 @@ return [
                 [
                     'class' => '\mii\console\Log',
                     'levels' => mii\log\Logger::ALL,
-                    'file' => '/logs/console.log',
+                    'file' => '@app/logs/console.log',
                     'category' => ['console']
                 ]
             ]

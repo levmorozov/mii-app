@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <title><?php echo $title;?></title>
-    <meta http-equiv="Content-Language" content="ru">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset='utf-8'>
     <?php if($description):?>
         <meta name="description" content="<?php echo $description?>" />
     <?php endif;?>
@@ -12,12 +10,19 @@
         <meta property="og:<?php echo $name?>" content="<?php echo str_replace('"',"'",$content) ?>" />
     <?php endforeach;?>
 
-    <?= Mii::$app->blocks ?>
+    <?php foreach ($links as $link): ?>
+        <?= '<link' . mii\util\HTML::attributes($link) . '/>' ?>
+    <?php endforeach; ?>
+
+    <?= Mii::$app->blocks->css(); ?>
+    <?= Mii::$app->blocks->js(\mii\web\Blocks::HEAD); ?>
 </head>
 <body>
-<?php echo $layout?>
 
-<?php if(config('profiling')) \mii\util\Profiler::show();?>
+<?= Mii::$app->blocks->js(\mii\web\Blocks::BEGIN); ?>
+<?php echo $layout?>
+<?= Mii::$app->blocks->js(\mii\web\Blocks::END); ?>
+<?php if(config('debug')) \mii\util\Profiler::show();?>
 
 </body>
 </html>

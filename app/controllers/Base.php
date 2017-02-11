@@ -15,8 +15,7 @@ class Base extends Controller {
         $this->acl->allow('*');
     }
 
-
-    public function before() {
+    protected function before() {
         parent::before();
 
         if (!$this->request->is_ajax()) {

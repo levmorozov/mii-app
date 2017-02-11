@@ -4,10 +4,6 @@ $config =  [
 
     'error_controller' => '\app\controllers\Error',
 
-    'image' => [
-        'class' => '\mii\image\Gmagick'
-    ],
-
     'components' => [
         'cache' => [
             'prefix' => 'miiapp',

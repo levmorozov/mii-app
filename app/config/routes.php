@@ -4,9 +4,7 @@ return [
 
     'app\controllers' => [
 
-        '/' => 'test/Bar',
-
-        'show_{controller}' => 'main',
+        '/' => 'main',
 
         '{page}' => [
             'path' => 'page:show',
